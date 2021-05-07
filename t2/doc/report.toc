@@ -1,0 +1,31 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {paragraph}{}{1}{section*.2}%
+\contentsline {section}{\numberline {2}Theoretical Analysis}{2}{section.2}%
+\contentsline {paragraph}{}{2}{section*.4}%
+\contentsline {subsection}{\numberline {2.1}For $t<0$}{3}{subsection.2.1}%
+\contentsline {paragraph}{}{3}{section*.6}%
+\contentsline {subsection}{\numberline {2.2}For $t=0$}{3}{subsection.2.2}%
+\contentsline {paragraph}{}{3}{section*.9}%
+\contentsline {subsection}{\numberline {2.3}Natural Solution}{5}{subsection.2.3}%
+\contentsline {paragraph}{}{5}{section*.12}%
+\contentsline {subsection}{\numberline {2.4}Forced Solution}{5}{subsection.2.4}%
+\contentsline {paragraph}{}{5}{section*.14}%
+\contentsline {paragraph}{}{6}{table.caption.17}%
+\contentsline {subsection}{\numberline {2.5}Natural and Forced Superimposed}{6}{subsection.2.5}%
+\contentsline {paragraph}{}{6}{section*.18}%
+\contentsline {subsection}{\numberline {2.6}Frequency Response}{7}{subsection.2.6}%
+\contentsline {paragraph}{}{7}{section*.20}%
+\contentsline {section}{\numberline {3}Simulation Analysis}{9}{section.3}%
+\contentsline {paragraph}{}{9}{section*.23}%
+\contentsline {subsection}{\numberline {3.1}For $t<0$}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}For $t=0$}{9}{subsection.3.2}%
+\contentsline {paragraph}{}{9}{section*.25}%
+\contentsline {subsection}{\numberline {3.3}Natural Solution}{11}{subsection.3.3}%
+\contentsline {paragraph}{}{11}{section*.27}%
+\contentsline {subsection}{\numberline {3.4}Total Solution}{11}{subsection.3.4}%
+\contentsline {paragraph}{}{11}{section*.29}%
+\contentsline {subsection}{\numberline {3.5}Frequency Response}{12}{subsection.3.5}%
+\contentsline {paragraph}{}{12}{section*.31}%
+\contentsline {section}{\numberline {4}Conclusion}{13}{section.4}%
+\contentsline {paragraph}{}{13}{section*.34}%

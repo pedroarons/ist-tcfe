@@ -1,0 +1,22 @@
+
+Circuit: ngspice t2e 
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Frequency Analysis
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 7001
+
+The file "finalsima.ps" may be printed on a postscript printer.
+finalsima_FIG
+
+The file "finalsimb.ps" may be printed on a postscript printer.
+finalsimb_FIG
+
+The file "finalsimc.ps" may be printed on a postscript printer.
+finalsimb_FIG
+ngspice-31 done

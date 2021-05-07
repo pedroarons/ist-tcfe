@@ -1,0 +1,44 @@
+ngspice T2e 
+ 
+.options savecurrents 
+ 
+Vs n1 GND 0  ac 1 sin(0 1 1k)
+V0 GND n9 0 
+R1 n2 n1 1.023629k 
+R2 n3 n2 2.086404k 
+R3 n2 n5 3.099961k 
+R4 n5 GND 4.081833k 
+R5 n6 n5 3.041696k 
+R6 n7 n9 2.041567k 
+R7 n8 n7 1.041568k 
+H1 n5 n8 V0 8.168406k 
+G1 n6 n3 n2 n5 7.295719m 
+C1 n6 n8 1.049083u 
+ 
+.ic v(n6) = 8.743422 v(n8) = 0 
+ 
+.control 
+ 
+op 
+echo "Frequency Analysis" 
+ac dec 1000 0.1 1MEG 
+set hcopypscolor=0 
+ set color0=white 
+ set color1=black 
+ set color2=red 
+ set color3=blue 
+ set color4=violet 
+ set color5=rgb:3/8/0 
+ set color6=rgb:4/0/0 
+hardcopy finalsima.ps vdb(n6) vdb(n1) xlimit 1 1000k 
+echo finalsima_FIG 
+hardcopy finalsimb.ps cph(n6) cph(n1) xlimit 1 1000k 
+echo finalsimb_FIG 
+let outd(V6) = 180/PI*cph(n6) 
+ let outd(Vs) = 180/PI*cph(n1) 
+hardcopy finalsimc.ps outd(V6) outd(Vs) xlimit 1 1000k 
+echo finalsimb_FIG 
+quit 
+.endc 
+ 
+.end
