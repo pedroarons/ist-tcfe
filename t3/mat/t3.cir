@@ -1,0 +1,47 @@
+Ngspice T3 
+Vs 1 0 0 sin(0 230 50 0 0 90) 
+D1 2 4 Default 
+D2 GND 2 Default 
+D3 3 4 Default 
+D4 GND 3 Default 
+R1 GND 4 6k 
+R2 5 4 24k 
+C1 4 GND 5u 
+D5 5 GND Default2 
+F1 1 0 E1 0.083333333333333333333 
+E1 3 2 1 0 0.083333333333333333333 
+.model Default D 
+.model Default2 D (n=20) 
+.end 
+.control 
+set hcopypscolor=0 
+set color0=white 
+set color1=black 
+set color2=red 
+set color3=blue 
+set color4=violet 
+set color5=rgb:3/8/0 
+set color6=rgb:4/0/0 
+op 
+tran 0.0002 400m 200m 
+let RippleEnvelope = maximum(v(4))-minimum(v(4)) 
+let AverageEnvelope = mean(v(4)) 
+let RippleRegulator = maximum(v(5))-minimum(v(5)) 
+let AverageRegulator = mean(v(5)) 
+echo "sim_TAB" 
+print RippleEnvelope 
+print AverageEnvelope 
+print RippleRegulator 
+print AverageRegulator 
+echo "sim_END" 
+let Merit = 1/ (37.4* ((maximum(v(5))-minimum(v(5))) + abs(mean(v(5)-12)) + 10e-6)) 
+echo "merit_TAB" 
+print Merit 
+echo "merit_END" 
+let v4 = v(4)-2*v(2)[0] 
+hardcopy comp.ps v(3)-v(2) v4 v(5) 
+echo comp_FIG 
+hardcopy dev.ps v(5)-12 
+echo dev_FIG 
+quit 
+.endc
