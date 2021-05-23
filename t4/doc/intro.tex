@@ -1,0 +1,31 @@
+\section{Introduction}
+\label{sec:introduction}
+\paragraph{}
+\par In this assignment we were tasked with the creation of an audio amplifier circuit and its analysis, both theoretically and through NGSpice.
+\par An audio amplifier is a circuit configuration in which an imput signal is received, amplified and sent to a speaker. Our input signal will have a voltage of 10 mV and will be outputted into an 8 $\Omega$ speaker.
+\par This circuit comprises 2 stages: a gain stage, where the signal is significantly amplifed with the cost of also increasing its impedance. This stage's main component is a NPN transistor; and an output stage where, in order to bridge the previous problem, reduces the impedance keeping the same signal amplitude. This stage has a PNP transistor as its primary component. This fulfills the goal of having an increased signal without any noticeable gain loss.
+\par However, there can be setbacks in these situations which is why the quality of the designed circuit has a figure of merit that follows the equation below:
+\[Merit=\frac{Gain \cdot Bandwidth}{Cost \cdot LowerCutOffFrequency}\]
+\par In the laboratory description, the following general design of the circuit was given:
+
+\begin{figure}[H]
+    \includegraphics[width=0.5\linewidth]{circuit.pdf}
+    \centering
+    \caption{Studied Circuit}
+    \label{circuit}
+\end{figure}
+
+
+\par The gain and output stages were added to this information, creating the final circuit shown below: 
+
+\begin{figure}[H]
+    \includegraphics[width=0.5\linewidth]{Lab4.pdf}
+    \centering
+    \caption{Studied Circuit}
+    \label{circuit}
+\end{figure}
+
+\par In Section~\ref{sec:analysis}, a theoretical analysis of the circuit is
+presented. In Section~\ref{sec:simulation}, the circuit is analysed by
+simulation using NGSpice, with its results being compared to the theoretical results obtained in
+Section~\ref{sec:analysis} in the Section~\ref{sec:conclusion}, while also outlining in this section the conclusions of this study.	
