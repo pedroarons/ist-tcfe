@@ -1,0 +1,34 @@
+\section{Theoretical Analysis}
+\label{sec:analysis}
+\paragraph{}
+
+\par In this section, the circuit is analyzed in theory through Octave calculations. The BPF circuit shown in the introduction basically consists of a high pass filter in series with a low pass filter and a signal amplifier. To be able to make calculations, the OpAmp characteristics are assumed to be ideal, that means its impedance is infinite for the input and null for output.
+\par With the values for the components given in table 1, it is possible to calculate the following values:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        \input{../mat/TA.tex}
+    \end{tabular}
+    \caption{Values for Gain, Input and Output impedances calculated thgrouh Octave}
+    \label{TA}
+\end{table}
+
+\par Finally the frequency response $V_0(f)/V_i(f)$ is ploted for the gain:
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\linewidth]{gain.eps}
+	\centering
+	\caption{Gain plot - $\frac{V_o(f)}{V_i(f)}$}
+	\label{gain}
+\end{figure}
+
+\par And for the phase:
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\linewidth]{phase.eps}
+	\centering
+	\caption{Phase plot}
+	\label{pha}
+\end{figure}

@@ -1,0 +1,86 @@
+\newpage{}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\paragraph{}
+\par Starting the conclusion with a comparison between Octave and NGSpice values, the results are as follows:
+\begin{table}[H]
+	\begin{minipage}{.5\linewidth}
+		\centering
+		\begin{tabular}{|c|c|}
+		\hline
+		\input{../mat/Comp.tex}
+		\end{tabular}
+		\caption{Theoretical Analysis}
+		\label{ta}
+	\end{minipage}
+	\begin{minipage}{.5\linewidth}
+		\centering
+		\begin{tabular}{|c|c|}
+		\hline
+		\input{../sim/zin_TAB.tex}
+    		\input{../sim/zo_TAB.tex}
+    		\input{../sim/sim_TAB.tex}
+	\end{tabular}
+		\caption{Simulation Analysis}
+		\label{sa}
+	\end{minipage} 
+\end{table}
+
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.75\linewidth]{gain.eps}
+  \caption{Theoretical Analysis}
+  \label{fig:sim4}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.60\linewidth]{../sim/gain.pdf}
+  \caption{Simulation Analysis}
+  \label{fig:sim5}
+\end{subfigure}
+\end{figure}
+
+
+
+
+
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.75\linewidth]{phase.eps}
+  \caption{Theoretical Analysis}
+  \label{fig:sim4}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.60\linewidth]{../sim/phase.pdf}
+  \caption{Simulation Analysis}
+  \label{fig:sim5}
+\end{subfigure}
+\end{figure}
+		
+
+\par It is clear just from looking at the information above that the model done is fairly accurate in both scenarios, with every aspect being very similar with the exception of both plots, more noticeably for the frequency response phase. This particular discrepancy can be explained by the non-linearity of the circuit, a problem present in every lab assignment with components with that behaviour, or the fact that the OpAmp used in the theoretical analysis was an ideal one with no output impedance and infinte output impedance, whereas in the simulation a more specific and complex model is used.
+\par To wrap it all up, the objective of this laboratory was successfully completed, obtaining a merit of 1.49519e-5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

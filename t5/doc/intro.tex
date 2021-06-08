@@ -1,0 +1,34 @@
+\section{Introduction}
+\label{sec:introduction}
+\paragraph{}
+\par The aim of this laboratory is to design a BandPass Filter (BPF) and to implement it using and Operational Amplifier (OpAmp) that has a central frequency of 1kHz and a gain at that central frequency of 40dB. In this assignment there were constraints in the number of components, specifically in resistors and capacitors, that could be used. The figure of Merit shown below quantifies the quality of the BPF.
+\[Merit=\frac{1}{Cost \cdot (GainDeviation + CentralFrequecyDeviation + 10^{-6})}\]
+
+\par The circuit designed by the group is presented as follows:
+
+\begin{figure}[H]
+    \includegraphics[width=0.5\linewidth]{Lab5.pdf}
+    \centering
+    \caption{Studied Circuit}
+    \label{circuit}
+\end{figure}
+
+\par The table below has the values of the different components in the previous circuit. The units are V, $\Omega$ and F.            	
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+        \input{../mat/Val.tex}
+    \end{tabular}
+    \caption{Output Stage}
+    \label{table4a}
+\end{table}
+
+
+\par The component $R_3$ is the equivallent to the association of two 100kOhm resistor in parallel with another 100kOhm resistor in series. The component $C_2$ is the equivallent to the association of one 220nF capacitor and one 1 $\mu F$ in series. 
+
+\par In Section~\ref{sec:analysis}, a theoretical analysis of the circuit is
+presented. In Section~\ref{sec:simulation}, the circuit is analysed by
+simulation using NGSpice, with its results being compared to the theoretical results obtained in
+Section~\ref{sec:analysis} in the Section~\ref{sec:conclusion}, while also outlining in this section the conclusions of this study.	

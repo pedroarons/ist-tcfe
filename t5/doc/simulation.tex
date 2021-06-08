@@ -1,0 +1,53 @@
+\newpage{}
+
+\section{Simulation Analysis}
+\label{sec:simulation}
+\paragraph{}
+\par In this section the circuit is analyzed in NGSpice.
+\par Given that the model for the OpAmp was already provided, it was only necessary to insert the circuit from the Introduction. The main focus was to analyze and optimize the components within the limits stipulated by the professor in order to obtain the best results possible.
+\par The group settled for a model that outputted the following data:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline    
+    \input{../sim/zin_TAB.tex}
+    \input{../sim/zo_TAB.tex}
+    \input{../sim/sim_TAB.tex}
+  \end{tabular}
+  \caption{Simulation Analysis Values}
+  \label{sim}
+\end{table}
+
+\par The merit in this situation is calculated with expression \ref{merit}:
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline    
+    \input{../sim/merit_TAB.tex}
+  \end{tabular}
+  \caption{Merit Value}
+  \label{merit}
+\end{table}
+
+\par The graphs for the frequency response of the gain and phase, that will be compared to the theoretical ones in the following section are represented as follows:
+
+
+\begin{figure}[ht]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.60\linewidth]{../sim/gain.pdf}
+  \caption{Theoretical Analysis}
+  \label{fig:sim4}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.60\linewidth]{../sim/phase.pdf}
+  \caption{Simulation Analysis}
+  \label{fig:sim5}
+\end{subfigure}
+\end{figure}
+
+

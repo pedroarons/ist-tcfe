@@ -4,15 +4,6 @@
 # type "make clean" to delete all generated files
 # ------------------------------------------------------------	
 
-#all: | data.txt open
-
-#data.txt:
-#	echo 95818 | python t2_datagen.py > data.txt
-#	sed -i -e '1,8d;20,22d' data.txt
-#	sed -i 's/Values:  //g' data.txt
-#	sed -i 's/[^ ]*R[^ ]*//ig' data.txt
-#	sed -i 's/[^0-9.]*//g' data.txt
-
 open:
 	make -C mat
 	make -C sim
@@ -26,4 +17,5 @@ clean:
 	make -C sim clean
 
 .PHONY: all clean
+
 
